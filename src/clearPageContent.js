@@ -5,3 +5,5 @@ const resetPage = () => {
   const main = document.querySelector("#mainDiv");
   main.remove();
 };
+
+export default resetPage;

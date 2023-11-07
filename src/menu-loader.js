@@ -1,4 +1,8 @@
+import resetPage from "./clearPageContent";
+
 const loadMenu = () => {
+  resetPage();
+
   const content = document.querySelector("#content");
 
   const mainDiv = document.createElement("div");

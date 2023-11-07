@@ -1,4 +1,8 @@
+import resetPage from "./clearPageContent";
+
 const loadContact = () => {
+  resetPage();
+
   const content = document.querySelector("#content");
 
   const mainDiv = document.createElement("div");

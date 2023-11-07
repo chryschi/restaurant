@@ -6,10 +6,10 @@ const loadNav = () => {
   const logo = document.querySelector("#logo");
   logo.setAttribute("hidden", "hidden");
 
-  const main = document.querySelector("main-content");
+  const main = document.querySelector("#main-div");
   main.setAttribute("hidden", "hidden");
 
-  const content = document.querySelector("content");
+  const content = document.querySelector("#content");
 
   const navContainer = document.createElement("div");
   navContainer.setAttribute("id", "navbar");
@@ -41,7 +41,7 @@ const closeNav = () => {
   const logo = document.querySelector("#logo");
   logo.removeAttribute("hidden");
 
-  const main = document.querySelector("main-content");
+  const main = document.querySelector("#main-content");
   main.removeAttribute("hidden");
 
   const navContainer = document.querySelector("#navbar");

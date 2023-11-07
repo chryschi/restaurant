@@ -1,4 +1,9 @@
+import { loadNav } from "./navpage-loader";
+
 const loadPage = () => {
+  const button = document.querySelector("#nav-button");
+  button.addEventListener("click", loadNav);
+
   const content = document.querySelector("#content");
 
   const mainDiv = document.createElement("div");
