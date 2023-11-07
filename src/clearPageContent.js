@@ -11,7 +11,7 @@ const resetPage = () => {
   navContainer.remove();
 
   const button = document.querySelector("#nav-button");
-  button.textContent = "Burger";
+  button.querySelector("span").textContent = "menu";
   button.removeEventListener("click", closeNav);
   button.addEventListener("click", loadNav);
 };

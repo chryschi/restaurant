@@ -32,7 +32,7 @@ const loadNav = () => {
   navContainer.appendChild(contactLink);
 
   const button = document.querySelector("#nav-button");
-  button.textContent = "X";
+  button.querySelector("span").textContent = "close";
   button.removeEventListener("click", loadNav);
   button.addEventListener("click", closeNav);
 };
@@ -48,7 +48,7 @@ const closeNav = () => {
   navContainer.remove();
 
   const button = document.querySelector("#nav-button");
-  button.textContent = "Burger";
+  button.querySelector("span").textContent = "menu";
   button.removeEventListener("click", closeNav);
   button.addEventListener("click", loadNav);
 };
