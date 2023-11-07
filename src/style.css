@@ -38,7 +38,7 @@ body {
 }
 
 header {
-  padding: 10px;
+  padding: 20px 30px;
   font-family: "Ms Madi";
   font-size: 50px;
 
@@ -55,6 +55,16 @@ header {
 #nav-button {
   grid-column-start: 3;
   margin-left: auto;
+  padding: 0;
+
+  border: none;
+  background: transparent;
+}
+
+.material-symbols-outlined {
+  font-size: 38px;
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 38;
+  color: #ffe2bb;
 }
 
 #main-div {
