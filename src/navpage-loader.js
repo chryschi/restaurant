@@ -1,6 +1,6 @@
 import loadContact from "./contact-loader";
+import loadHome from "./home-loader";
 import loadMenu from "./menu-loader";
-import loadPage from "./page-loader";
 
 const loadNav = () => {
   const logo = document.querySelector("#logo");
@@ -17,7 +17,7 @@ const loadNav = () => {
 
   const homeLink = document.createElement("a");
   homeLink.textContent = "Home";
-  homeLink.addEventListener("click", loadPage);
+  homeLink.addEventListener("click", loadHome);
   navContainer.appendChild(homeLink);
 
   const menuLink = document.createElement("a");
@@ -41,7 +41,7 @@ const closeNav = () => {
   const logo = document.querySelector("#logo");
   logo.removeAttribute("hidden");
 
-  const main = document.querySelector("#main-content");
+  const main = document.querySelector("#main-div");
   main.removeAttribute("hidden");
 
   const navContainer = document.querySelector("#navbar");
