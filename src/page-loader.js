@@ -16,8 +16,12 @@ const loadPage = () => {
 
   const description = document.createElement("p");
   description.textContent =
-    "We are an italian restaurant in the heart of Golden Shores, California, and we prepare tasty meditarranian food for you. Come and let your taste buds go on a delicous trip to Italy!";
+    "We are an italian restaurant in the heart of Golden Shores, California, and we prepare tasty meditarranian food for you. ";
   mainDiv.appendChild(description);
+  const description2 = document.createElement("p");
+  description2.textContent =
+    "Come and let your taste buds go on a delicous trip to Italy!";
+  mainDiv.appendChild(description2);
 };
 
 export default loadPage;

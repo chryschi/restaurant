@@ -7,6 +7,7 @@ const loadNav = () => {
   logo.setAttribute("hidden", "hidden");
 
   const main = document.querySelector("#main-div");
+  main.style.display = "none";
   main.setAttribute("hidden", "hidden");
 
   const content = document.querySelector("#content");
@@ -43,6 +44,7 @@ const closeNav = () => {
 
   const main = document.querySelector("#main-div");
   main.removeAttribute("hidden");
+  main.style.display = "flex";
 
   const navContainer = document.querySelector("#navbar");
   navContainer.remove();
