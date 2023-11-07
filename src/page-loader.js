@@ -1,21 +1,18 @@
 const loadPage = () => {
   const content = document.querySelector("#content");
 
-  const header = document.createElement("header");
-  header.textContent = "PRIMAVERA";
-  content.appendChild(header);
+  const mainDiv = document.createElement("div");
+  mainDiv.setAttribute("id", "main-div");
+  content.appendChild(mainDiv);
 
-  const main = document.createElement("main");
-  content.appendChild(main);
-
-  const image = document.createElement("img");
-  image.setAttribute("src", "../src/pexels-volkan-vardar-3887985.jpg");
-  main.appendChild(image);
+  const mainTitle = document.createElement("h1");
+  mainTitle.textContent = "Welcome to Primavera!";
+  mainDiv.appendChild(mainTitle);
 
   const description = document.createElement("p");
   description.textContent =
-    "This place is wonderful, because we cook delicious food for you!";
-  main.appendChild(description);
+    "We are an italian restaurant in the heart of Golden Shores, California, and we prepare tasty meditarranian food for you. Come and let your taste buds go on a delicous trip to Italy!";
+  mainDiv.appendChild(description);
 };
 
 export default loadPage;
