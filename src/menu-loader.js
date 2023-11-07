@@ -13,6 +13,10 @@ const loadMenu = () => {
   mainTitle.textContent = "Menu";
   mainDiv.appendChild(mainTitle);
 
+  const dishContainer = document.createElement("div");
+  dishContainer.setAttribute("id", "dish-container");
+  mainDiv.appendChild(dishContainer);
+
   const createDish = (title, description) => {
     const dishDiv = document.createElement("div");
     const titleDiv = document.createElement("h2");
@@ -30,19 +34,31 @@ const loadMenu = () => {
     "Bruschetta",
     "Sliced toasted bread topped with diced tomatoes, fresh basil, garlic, and olive oil"
   );
-  mainDiv.appendChild(bruschetta);
+  dishContainer.appendChild(bruschetta);
 
   const capreseSalad = createDish(
     "Caprese Salad",
     "A simple and refreshing salad made with fersh mozarella, ripe tomatoes, basil leaves olive oil and balsamic vinegar"
   );
-  mainDiv.appendChild(capreseSalad);
+  dishContainer.appendChild(capreseSalad);
 
   const pastaPrimavera = createDish(
     "Pasta Primavera",
     "A pasta dish featuring a variety of seasonal sautéed or roasted vegetables in a light olive oil or cream sauce"
   );
-  mainDiv.appendChild(pastaPrimavera);
+  dishContainer.appendChild(pastaPrimavera);
+
+  const lasagna = createDish(
+    "Lasagna",
+    "Layers of pasts sheets, ricotta cheese, ground meat, tomato sauce, and mozarella, baked to perfection"
+  );
+  dishContainer.appendChild(lasagna);
+
+  const tiramisu = createDish(
+    "Tiramisu",
+    "A popular italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese, dusted with cocoa powder"
+  );
+  dishContainer.appendChild(tiramisu);
 };
 
 export default loadMenu;
