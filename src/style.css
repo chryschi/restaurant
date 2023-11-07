@@ -67,6 +67,13 @@ header {
   font-size: 38px;
   font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 38;
   color: #ffe2bb;
+  transition: 0.1s;
+}
+
+.material-symbols-outlined:hover {
+  color: white;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 #content {
@@ -134,6 +141,13 @@ h2 {
 
 a {
   text-align: center;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: white;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 p {
