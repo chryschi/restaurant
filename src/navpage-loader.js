@@ -22,12 +22,12 @@ const loadNav = () => {
 
   const menuLink = document.createElement("a");
   menuLink.textContent = "Menu";
-  homeLink.addEventListener("click", loadMenu);
+  menuLink.addEventListener("click", loadMenu);
   navContainer.appendChild(menuLink);
 
   const contactLink = document.createElement("a");
   contactLink.textContent = "Contact";
-  homeLink.addEventListener("click", loadContact);
+  contactLink.addEventListener("click", loadContact);
 
   navContainer.appendChild(contactLink);
 
