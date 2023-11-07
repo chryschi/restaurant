@@ -13,7 +13,7 @@ const loadMenu = () => {
   mainTitle.textContent = "Menu";
   mainDiv.appendChild(mainTitle);
 
-  const createDishElement = (title, description) => {
+  const createDish = (title, description) => {
     const dishDiv = document.createElement("div");
     const titleDiv = document.createElement("h2");
     titleDiv.textContent = title;
