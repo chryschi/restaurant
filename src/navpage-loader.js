@@ -3,6 +3,9 @@ import loadHome from "./home-loader";
 import loadMenu from "./menu-loader";
 
 const loadNav = () => {
+  document.body.style.backgroundImage =
+    "linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.8)), url(./416ad71d51b398ddb1af.jpg)";
+
   const logo = document.querySelector("#logo");
   logo.setAttribute("hidden", "hidden");
 
@@ -39,6 +42,9 @@ const loadNav = () => {
 };
 
 const closeNav = () => {
+  document.body.style.backgroundImage =
+    "linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(./416ad71d51b398ddb1af.jpg)";
+
   const logo = document.querySelector("#logo");
   logo.removeAttribute("hidden");
 

@@ -1,6 +1,9 @@
 import { closeNav, loadNav } from "./navpage-loader";
 
 const resetPage = () => {
+  document.body.style.backgroundImage =
+    "linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(./416ad71d51b398ddb1af.jpg)";
+
   const logo = document.querySelector("#logo");
   logo.removeAttribute("hidden");
 
