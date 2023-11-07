@@ -69,6 +69,26 @@ header {
   color: #ffe2bb;
 }
 
+#content {
+  font-family: "Markazi Text";
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
 #main-div {
   background-color: black;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30vh;
+}
+
+a {
+  text-align: center;
 }
